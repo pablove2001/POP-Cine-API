@@ -12,14 +12,4 @@ router.get("/", (req, res) => {
     .catch((error) => res.json({ message: error }));
 });
 
-// create a movie
-// router.post("/", (req, res) => {
-//   console.log("post movie");
-//   const movie = movieSchema(req.body);
-//   movie
-//     .save()
-//     .then((data) => res.json(data))
-//     .catch((error) => res.json({ message: error }));
-// });
-
 module.exports = router;
